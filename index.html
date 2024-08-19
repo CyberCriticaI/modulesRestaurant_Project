@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NavBar -->
+    <nav>
+        <img src="https://static.vecteezy.com/system/resources/previews/016/506/937/original/generic-restaurant-food-logo-badge-label-design-template-vector.jpg" alt="Logo" class="logo">
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#reservations">Reservations</a></li>
+            <li><a href="#order">Order Now</a></li>
+        </ul>
+    </nav>
+
+    <!-- Slideshow with all food items -->
+    <div class="slideshow">
+        <img class="slide" src="https://static01.nyt.com/images/2024/02/06/multimedia/KD-philly-cheesesteak-mhqc/KD-philly-cheesesteak-mhqc-superJumbo.jpg" alt="Dish 1">
+        <img class="slide" src="https://static.vecteezy.com/system/resources/previews/026/794/680/large_2x/double-hamburger-isolated-on-white-background-fresh-burger-fast-food-with-beef-and-cream-cheese-realistic-image-ultra-hd-high-design-very-detailed-free-photo.jpg" alt="Dish 2">
+        <img class="slide" src="https://www.allrecipes.com/thmb/0xH8n2D4cC97t7mcC7eT2SDZ0aE=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/6776_Pizza-Dough_ddmfs_2x1_1725-fdaa76496da045b3bdaadcec6d4c5398.jpg" alt="Dish 3">
+    </div>
+
+    <!-- Food Menu -->
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-item" data-description="A delicious Philly cheesesteak with a side of cold drink. Perfect for a hearty meal.">
+            <img class="menu-item-img" src="https://png.pngtree.com/png-clipart/20231027/original/pngtree-philly-cheese-steak-sandwich-and-cold-drink-with-a-transparent-background-png-image_13445694.png" alt="Dish 1">
+            <div class="menu-item-details">
+                <h3>Philly Cheesesteak Combo</h3>
+                <p>$12.99</p>
+            </div>
+        </div>
+        <div class="menu-item" data-description="A classic burger paired with crispy fries, delivering a satisfying combo meal.">
+            <img class="menu-item-img" src="https://static.vecteezy.com/system/resources/previews/027/297/782/original/hamburger-with-french-fries-on-wooden-plate-delivery-foods-isolated-on-white-transparent-background-ai-generate-png.png" alt="Dish 2">
+            <div class="menu-item-details">
+                <h3>Burger and Fries Combo</h3>
+                <p>$11.99</p>
+            </div>
+        </div>
+        <div class="menu-item" data-description="Enjoy a slice of pizza with a refreshing beer, the ultimate combo for a fun night.">
+            <img class="menu-item-img" src="https://www.nicepng.com/png/full/212-2120666_pizza-beer-beer.png" alt="Dish 3">
+            <div class="menu-item-details">
+                <h3>Pizza and Beer Combo</h3>
+                <p>$18.99</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation and Order Now button -->
+    <footer>
+        <button onclick="reserveTable()">Reserve a Table</button>
+        <button onclick="orderNow()">Order Now</button>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
